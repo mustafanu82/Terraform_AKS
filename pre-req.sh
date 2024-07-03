@@ -1,11 +1,11 @@
 #!/bin/bash
 
 RESOURCE_GROUP_NAME=backendrg
-STORAGE_ACCOUNT_NAME=backendtf101
+STORAGE_ACCOUNT_NAME=backendtf001
 CONTAINER_NAME=tfstate
 
 # Create resource group
-az group create --name $RESOURCE_GROUP_NAME --location canadacentral
+az group create --name $RESOURCE_GROUP_NAME --location "Australia Southeast"
 
 # Create storage account
 az storage account create --resource-group $RESOURCE_GROUP_NAME --name $STORAGE_ACCOUNT_NAME --sku Standard_LRS --encryption-services blob
